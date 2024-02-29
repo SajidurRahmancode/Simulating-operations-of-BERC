@@ -13,7 +13,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.stage.Stage;
-//jawhar
+//sajid
 public abstract class User {
     protected String username, password, userType;
 

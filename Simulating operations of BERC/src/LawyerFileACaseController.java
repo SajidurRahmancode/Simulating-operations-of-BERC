@@ -49,7 +49,7 @@ public class LawyerFileACaseController implements Initializable {
     @FXML
     private void backButtonOnAction(ActionEvent event) throws IOException 
     {
-         Parent scene2Parent = FXMLLoader.load(getClass().getResource("LawyerHomeScene.fxml"));
+         Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyerHomeScene.fxml"));
          Scene scene2 = new Scene(scene2Parent);
          Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         

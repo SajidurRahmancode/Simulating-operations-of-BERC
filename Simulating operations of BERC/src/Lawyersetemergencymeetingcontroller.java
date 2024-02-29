@@ -48,9 +48,8 @@ public class Lawyersetemergencymeetingcontroller implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-           meetingTypeComboBox.getItems().addAll("Offline Meeting", "Online Meeting");
-           
-           setByComboBox2.getItems().addAll("Land Owner", "Employee", "H.R", "Finance Department", "Lawyer","Land Buyer","Land Registraion Administrative");
+            meetingTypeComboBox.getItems().addAll("Offline Meeting", "Online Meeting");
+            setByComboBox2.getItems().addAll("chairman", "Employee", "Lawyer", "Tariff officer","consumer" ,"Finance officer","District Manager","Government Authorities");
 
         
         // TODO
@@ -58,7 +57,7 @@ public class Lawyersetemergencymeetingcontroller implements Initializable {
 
     @FXML
     private void backButtonOnAction(ActionEvent event) throws IOException {
-           Parent scene2Parent = FXMLLoader.load(getClass().getResource("LawyerHomeScene.fxml"));
+         Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyerHomeScene.fxml"));
          Scene scene2 = new Scene(scene2Parent);
          Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         

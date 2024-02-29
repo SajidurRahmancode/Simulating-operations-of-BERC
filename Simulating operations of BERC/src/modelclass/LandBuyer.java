@@ -101,7 +101,7 @@ try {
 
                       name,gender,age,nid,phone,address
                     );
-       File f = new File("Landbuyerinfo.bin");
+       File f = new File("energydepartmentinfo.bin");
 
     try {
         FileOutputStream fos;

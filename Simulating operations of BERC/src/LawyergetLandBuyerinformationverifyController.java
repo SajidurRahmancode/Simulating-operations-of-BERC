@@ -46,7 +46,7 @@ public class LawyergetLandBuyerinformationverifyController implements Initializa
         
         
         try {
-            g = new File("Landbuyerinfo.bin");
+            g = new File("energydepartmentinfo.bin");
             fi = new FileInputStream(g);
             oi = new ObjectInputStream(fi);
             Landbuyerinformation land;
@@ -74,7 +74,7 @@ public class LawyergetLandBuyerinformationverifyController implements Initializa
 
     @FXML
     private void backbtn(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("LawyerHomeScene.fxml"));
+        Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyerHomeScene.fxml"));
         Scene scene2 = new Scene(scene2Parent);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(scene2);
@@ -89,7 +89,7 @@ public class LawyergetLandBuyerinformationverifyController implements Initializa
                 ObjectInputStream ois = null;
 
                 try {
-                    f = new File("Landbuyerinfo.bin");
+                    f = new File("energydepartmentinfo.bin");
                     fis = new FileInputStream(f);
                     ois = new ObjectInputStream(fis);
                     Landbuyerinformation buyer;

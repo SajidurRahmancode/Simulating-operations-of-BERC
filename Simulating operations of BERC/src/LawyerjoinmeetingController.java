@@ -59,8 +59,7 @@ public class LawyerjoinmeetingController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        selectSetByCombo2.getItems().addAll("Land Owner", "Employee", "H.R", "Finance Department", "Lawyer","Land Buyer","Land Registraion Administrative");
-           
+        selectSetByCombo2.getItems().addAll("chairman", "Employee", "Lawyer", "Tariff officer","consumer" ,"Finance officer","District Manager","Government Authorities");
                 
         selectTypeCombo.getItems().addAll("Offline Meeting", "Online Meeting");
 
@@ -71,7 +70,7 @@ public class LawyerjoinmeetingController implements Initializable {
 
     @FXML
     private void backButtonOnAction(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("LawyerHomeScene.fxml"));
+        Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyerHomeScene.fxml"));
          Scene scene2 = new Scene(scene2Parent);
          Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         
