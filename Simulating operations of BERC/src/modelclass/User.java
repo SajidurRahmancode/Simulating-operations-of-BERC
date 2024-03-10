@@ -52,13 +52,13 @@ public abstract class User {
                 userSceneParent = FXMLLoader.load(getClass().getResource("governmentAuthHomeScene.fxml"));
                 break;
             case "Finance officer":
-                userSceneParent = FXMLLoader.load(getClass().getResource("LawyerHomeScene.fxml"));
+                userSceneParent = FXMLLoader.load(getClass().getResource("Financeofficer.fxml"));
                 break;
             case "District Manager":
-                userSceneParent = FXMLLoader.load(getClass().getResource("LandBuyerhomescene.fxml"));
+                userSceneParent = FXMLLoader.load(getClass().getResource("DistrictManager.fxml"));
                 break;
             case "Government Authorities":
-                userSceneParent = FXMLLoader.load(getClass().getResource("LandRegistrationAdministrative.fxml"));
+                userSceneParent = FXMLLoader.load(getClass().getResource("GovernmentAuthorities.fxml"));
                 break;
             default:
                 throw new IOException("Invalid user type");
