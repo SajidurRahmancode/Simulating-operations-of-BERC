@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LawyerleaverequestsceneController">
    <children>
-      <AnchorPane layoutX="-11.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="691.0" style="-fx-background-color: green;">
+      <AnchorPane layoutX="-11.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="691.0" style="-fx-background-color: purple;">
          <children>
             <Label layoutX="265.0" layoutY="19.0" text="Request Leave" textFill="WHITE">
                <font>
