@@ -175,6 +175,7 @@ public class Tarriffofficerhomescenecontroller implements Initializable {
         window.setScene(scene2);
         window.show();
     }
+
     
     
     
