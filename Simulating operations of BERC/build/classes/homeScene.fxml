@@ -32,11 +32,14 @@
             <Font name="System Bold" size="18.0" />
          </font></Label>
       <ComboBox fx:id="userTypeComboBox" layoutX="625.0" layoutY="427.0" prefHeight="41.0" prefWidth="202.0" />
-      <Button layoutX="584.0" layoutY="571.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="74.0" prefWidth="142.0" text="Login">
+      <Button layoutX="584.0" layoutY="571.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="74.0" prefWidth="142.0" style="-fx-background-color: green;" text="Login" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="15.0" />
+            <Font name="System Bold" size="21.0" />
          </font></Button>
-      <Button layoutX="767.0" layoutY="571.0" mnemonicParsing="false" onMouseClicked="#registerbtn" prefHeight="74.0" prefWidth="134.0" text="Register" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="767.0" layoutY="571.0" mnemonicParsing="false" onMouseClicked="#registerbtn" prefHeight="74.0" prefWidth="134.0" style="-fx-background-color: green;" text="Register" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
       <ImageView fitHeight="629.0" fitWidth="547.0" layoutX="20.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@bdmap.jpg" />

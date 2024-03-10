@@ -46,7 +46,7 @@ public abstract class User {
                 userSceneParent = FXMLLoader.load(getClass().getResource("lawyerHomeScene.fxml"));
                 break;
             case "Tariff officer":
-                userSceneParent = FXMLLoader.load(getClass().getResource("financeDepartmentHomeScene.fxml"));
+                userSceneParent = FXMLLoader.load(getClass().getResource("tarriffofficerhomescene.fxml"));
                 break;
             case "consumer":
                 userSceneParent = FXMLLoader.load(getClass().getResource("governmentAuthHomeScene.fxml"));
