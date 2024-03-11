@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="774.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller=FinanceOfficerShowSalarySceneController" fx:controller="FinanceOfficerShowSalarySceneController">
+   <children>
+      <Button layoutX="340.0" layoutY="465.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="54.0" prefWidth="112.0" text="Back" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Text fill="#f5eeee" layoutX="299.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary Table">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableview" layoutX="68.0" layoutY="100.0" prefHeight="344.0" prefWidth="638.0">
+        <columns>
+          <TableColumn fx:id="empidcol" prefWidth="166.0" text="Employee ID" />
+          <TableColumn fx:id="salarycol" prefWidth="152.0" text="Salary" />
+            <TableColumn fx:id="bonuscol" prefWidth="152.0" text="Bonus" />
+            <TableColumn fx:id="datecol" prefWidth="167.0" text="Date " />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
