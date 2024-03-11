@@ -48,11 +48,6 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <Button layoutX="348.0" layoutY="364.0" mnemonicParsing="false" onAction="#getlandownerinfobtn" prefHeight="72.0" prefWidth="301.0" text="Get landowner information" textAlignment="CENTER" wrapText="true">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Button>
       <Button layoutX="15.0" layoutY="364.0" mnemonicParsing="false" onAction="#calculatetarriffbtn" prefHeight="72.0" prefWidth="301.0" text="Calculate Tarriff" textAlignment="CENTER" wrapText="true">
          <font>
             <Font name="System Bold" size="17.0" />
