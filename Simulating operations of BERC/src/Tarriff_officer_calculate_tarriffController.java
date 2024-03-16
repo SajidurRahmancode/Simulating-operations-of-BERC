@@ -3,7 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -59,12 +62,13 @@ public class Tarriff_officer_calculate_tarriffController implements Initializabl
     }
 
     @FXML
-    private void savebtn(ActionEvent event) {
-        File f = null;
+    private void savebtn(ActionEvent event) throws IOException {
+         File f = null;
         FileOutputStream fos = null;      
         ObjectOutputStream oos = null;
+        
         try {
-            f = new File("Tarriff.bin");
+            f = new File("tarriffcalc.bin");
             if(f.exists()){
                 fos = new FileOutputStream(f,true);
                 oos = new AppendableObjectOutputStream(fos);                
@@ -74,14 +78,12 @@ public class Tarriff_officer_calculate_tarriffController implements Initializabl
                 oos = new ObjectOutputStream(fos);               
             }
             Tarriff_officer e = new Tarriff_officer(
-                Float.parseFloat(amountinvested.getText()),
-                Float.parseFloat(profit.getText()),
+                Integer.parseInt(amountinvested.getText()),
+                Integer.parseInt(profit.getText()),
                 Float.parseFloat(tarriff_percentage.getText()),
-             startpicker.getValue(),
+                startpicker.getValue(),
                 endpicker.getValue(),
-                deptcombo.getValue()
-
-            );
+                deptcombo.getValue());
             oos.writeObject(e);
 
         } catch (IOException ex) {
@@ -91,11 +93,8 @@ public class Tarriff_officer_calculate_tarriffController implements Initializabl
                 if(oos != null) oos.close();
             } catch (IOException ex) {
                 Logger.getLogger(Tarriff_officer_calculate_tarriffController.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                       
-    }
-        
-        
+            }  
+        }
     
     }
     
