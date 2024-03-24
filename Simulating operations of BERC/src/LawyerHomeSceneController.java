@@ -152,23 +152,7 @@ public class LawyerHomeSceneController implements Initializable {
 
    
 
-    @FXML
-    private void getlandbuyernfobtn(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("LawyergetLandBuyerinformationverify.fxml"));
-        Scene scene2 = new Scene(scene2Parent);
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        window.setScene(scene2);
-        window.show();
-    }
-
-    @FXML
-    private void getlandownerinfobtn(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("Lawyergetlandownerinformation.fxml"));
-        Scene scene2 = new Scene(scene2Parent);
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        window.setScene(scene2);
-        window.show();
-    }
+    
 
     @FXML
     private void joinmeetingbtn(ActionEvent event) throws IOException {
