@@ -141,7 +141,7 @@ public class LawyerHomeSceneController implements Initializable {
 
     @FXML
     private void fileacomplaintbtn(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("Lawyer file a complain.fxml"));
+        Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyer file a complain.fxml"));
         Scene scene2 = new Scene(scene2Parent);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(scene2);
@@ -157,7 +157,7 @@ public class LawyerHomeSceneController implements Initializable {
     @FXML
     private void joinmeetingbtn(ActionEvent event) throws IOException {
 
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("Lawyerjoinmeeting.fxml"));
+        Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyerjoinmeeting.fxml"));
         Scene scene2 = new Scene(scene2Parent);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(scene2);
