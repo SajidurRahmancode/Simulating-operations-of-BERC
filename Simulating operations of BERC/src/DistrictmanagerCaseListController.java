@@ -13,8 +13,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
 /**
@@ -22,12 +22,16 @@ import javafx.stage.Stage;
  *
  * @author DELL
  */
-public class DistrictManagerFileaCaseController implements Initializable {
+public class DistrictmanagerCaseListController implements Initializable {
 
     @FXML
-    private TextArea caseTextArea;
+    private TableView<?> casefieldtable;
     @FXML
-    private TextField nametextfield;
+    private TableColumn<?, ?> casesummarycolumn;
+    @FXML
+    private TableColumn<?, ?> casenamecolumn;
+    @FXML
+    private TableColumn<?, ?> submittedbycolumn;
 
     /**
      * Initializes the controller class.
@@ -38,10 +42,6 @@ public class DistrictManagerFileaCaseController implements Initializable {
     }    
 
     @FXML
-    private void sendCaseButtonOnAction(ActionEvent event) {
-    }
-
-    @FXML
     private void backButtonOnAction(ActionEvent event) throws IOException {
         Parent scene2Parent = FXMLLoader.load(getClass().getResource("District Manager home scene.fxml"));
         Scene scene2 = new Scene(scene2Parent);
@@ -49,6 +49,10 @@ public class DistrictManagerFileaCaseController implements Initializable {
 
         window.setScene(scene2);
         window.show();
+    }
+
+    @FXML
+    private void removecasebtn(ActionEvent event) {
     }
     
 }
