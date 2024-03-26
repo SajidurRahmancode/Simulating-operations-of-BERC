@@ -19,11 +19,11 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
+import modelclass.SetMeeting;
 /**
  * FXML Controller class
  *
- * @author DELL
+ * @author sajid
  */
 public class DistrictmanagerjoinmeetingController implements Initializable {
 
