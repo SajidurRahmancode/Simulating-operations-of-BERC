@@ -11,21 +11,31 @@ import java.time.LocalDate;
  *
  * @author Reaper
  */
-public class Tarriff_officer extends User implements Serializable {
-    
+public class Tarriff extends User implements Serializable {
+        String     deptcombo;
         int  amountinvested,profit;
         float tarriff_percentage;
         
          LocalDate         startpicker;
             LocalDate      endpicker;
-           String     deptcombo;
+           
+        float tarriff;
 
-    public Tarriff_officer(int amountinvested, int profit, float tarriff_percentage, LocalDate startpicker, LocalDate endpicker, String deptcombo) {
+    public Tarriff(String deptcombo, int amountinvested, int profit, float tarriff_percentage, LocalDate startpicker, LocalDate endpicker, float tarriff) {
+        this.deptcombo = deptcombo;
         this.amountinvested = amountinvested;
         this.profit = profit;
         this.tarriff_percentage = tarriff_percentage;
         this.startpicker = startpicker;
         this.endpicker = endpicker;
+        this.tarriff = tarriff;
+    }
+
+    public String getDeptcombo() {
+        return deptcombo;
+    }
+
+    public void setDeptcombo(String deptcombo) {
         this.deptcombo = deptcombo;
     }
 
@@ -69,20 +79,20 @@ public class Tarriff_officer extends User implements Serializable {
         this.endpicker = endpicker;
     }
 
-    public String getDeptcombo() {
-        return deptcombo;
+    public float getTarriff() {
+        return tarriff;
     }
 
-    public void setDeptcombo(String deptcombo) {
-        this.deptcombo = deptcombo;
+    public void setTarriff(float tarriff) {
+        this.tarriff = tarriff;
     }
 
     @Override
     public String toString() {
-        return "Tarriff_officer{" + "amountinvested=" + amountinvested + ", profit=" + profit + ", tarriff_percentage=" + tarriff_percentage + ", startpicker=" + startpicker + ", endpicker=" + endpicker + ", deptcombo=" + deptcombo + '}';
+        return "Tarriff{" + "deptcombo=" + deptcombo + ", amountinvested=" + amountinvested + ", profit=" + profit + ", tarriff_percentage=" + tarriff_percentage + ", startpicker=" + startpicker + ", endpicker=" + endpicker + ", tarriff=" + tarriff + '}';
     }
 
-
     
+        
     
 }
