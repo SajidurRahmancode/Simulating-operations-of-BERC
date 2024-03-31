@@ -176,6 +176,16 @@ public class Tarriffofficerhomescenecontroller implements Initializable {
         window.show();
     }
 
+    @FXML
+    private void tarriffchartbtn(ActionEvent event) throws IOException {
+        
+        Parent scene2Parent = FXMLLoader.load(getClass().getResource("tarriffofficerchart.fxml"));
+        Scene scene2 = new Scene(scene2Parent);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(scene2);
+        window.show();
+    }
+
     
     
     
