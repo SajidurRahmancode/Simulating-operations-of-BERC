@@ -13,10 +13,13 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import modelclass.Lawyer;
+import modelclass.SetMeeting;
 
 /**
  * FXML Controller class
@@ -26,7 +29,7 @@ import javafx.stage.Stage;
 public class DistrictmanagerSetmeetingController implements Initializable {
 
     @FXML
-    private ComboBox<?> meetingTypeComboBox;
+    private ComboBox<String> meetingTypeComboBox;
     @FXML
     private DatePicker meetingDateDatePicker;
     @FXML
@@ -36,13 +39,15 @@ public class DistrictmanagerSetmeetingController implements Initializable {
     @FXML
     private TextField meetingLinkTextField;
     @FXML
-    private ComboBox<?> setByComboBox2;
+    private ComboBox<String> setByComboBox2;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        meetingTypeComboBox.getItems().addAll("Offline Meeting", "Online Meeting");
+            setByComboBox2.getItems().addAll("chairman", "Employee", "Lawyer", "Tariff officer","consumer" ,"Finance officer","District Manager","Government Authorities");
         // TODO
     }    
 
@@ -57,7 +62,80 @@ public class DistrictmanagerSetmeetingController implements Initializable {
     }
 
     @FXML
-    private void saveButtonOnAction(ActionEvent event) {
+    private void saveButtonOnAction(ActionEvent event) throws IOException {
+        
+        if(meetingTypeComboBox.getValue().equals("Online Meeting")){
+        Boolean addstatus= 
+                Lawyer.setMeeting(
+                        //String meetingLocation, String meetingLink, String meetingType, String meetingTime, String setby, LocalDate meetingDate
+                        meetingLocationTextField.getText(),
+                        meetingLinkTextField.getText(),
+                        meetingTypeComboBox.getValue(),
+                        meetingTimeTextField.getText(),
+                        setByComboBox2.getValue(),
+                        meetingDateDatePicker.getValue()
+                        
+                       
+                        
+
+
+                );
+        if(addstatus){
+
+            Alert a=new Alert(Alert.AlertType.INFORMATION);
+            a.setContentText("New Member Added Sucussfully");
+            a.showAndWait();
+        }
+        else{
+
+            Alert a =new Alert(Alert.AlertType.ERROR);
+            a.setContentText("Error");
+            a.showAndWait();
+        
     }
     
-}
+        }
+        
+        else if(meetingTypeComboBox.getValue().equals("Offline Meeting")){
+            
+            
+            Boolean addstatus= 
+                Lawyer.setMeetingg(
+                        //String meetingLocation, String meetingType, String meetingTime, String setby, LocalDate meetingDate
+                        meetingLocationTextField.getText(),
+                        meetingTypeComboBox.getValue(),
+                        meetingTimeTextField.getText(),
+                        setByComboBox2.getValue(),
+                        meetingDateDatePicker.getValue()
+                        
+
+
+                );
+            if(addstatus){
+
+            Alert a=new Alert(Alert.AlertType.INFORMATION);
+            a.setContentText("New Member Added Sucussfully");
+            a.showAndWait();
+        }
+        else{
+
+            Alert a =new Alert(Alert.AlertType.ERROR);
+            a.setContentText("Error");
+            a.showAndWait();
+        
+    }
+    
+        }
+        else{
+            Alert a =new Alert(Alert.AlertType.ERROR);
+                a.setContentText("Error");
+                a.showAndWait();
+        }
+        
+
+
+        
+    }
+    }
+    
+

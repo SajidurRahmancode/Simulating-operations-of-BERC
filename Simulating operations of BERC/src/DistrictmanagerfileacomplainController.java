@@ -13,10 +13,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import modelclass.FileHandling;
 
 /**
  * FXML Controller class
@@ -28,9 +30,9 @@ public class DistrictmanagerfileacomplainController implements Initializable {
     @FXML
     private TextArea messageBodyTextField;
     @FXML
-    private ComboBox<?> employeeidcombobox;
-    @FXML
     private TextField summaryTextField;
+    @FXML
+    private TextField IdTextField;
 
     /**
      * Initializes the controller class.
@@ -50,7 +52,33 @@ public class DistrictmanagerfileacomplainController implements Initializable {
     }
 
     @FXML
-    private void sendRequestButtonOnAction(ActionEvent event) {
+    private void sendRequestButtonOnAction(ActionEvent event) throws IOException {
+        Boolean addstatus= 
+                FileHandling.CreateFile(
+                        //String meetingLocation, String meetingLink, String meetingType, String meetingTime, String setby, LocalDate meetingDate
+                        IdTextField.getText(),
+                         summaryTextField.getText(),
+                        messageBodyTextField.getText(),
+                        "DM_Complain.bin"
+                        
+                       
+                        
+
+
+                );
+        if(addstatus){
+
+            Alert a=new Alert(Alert.AlertType.INFORMATION);
+            a.setContentText("New Complain Added Sucussfully");
+            a.showAndWait();
+        }
+        else{
+
+            Alert a =new Alert(Alert.AlertType.ERROR);
+            a.setContentText("Error");
+            a.showAndWait();
+        
+    }
     }
     
 }
