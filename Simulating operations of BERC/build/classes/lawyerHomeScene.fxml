@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="656.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LawyerHomeSceneController">
    <children>
-      <Label layoutX="274.0" layoutY="36.0" prefHeight="72.0" prefWidth="110.0" text="Lawyer" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+      <Label layoutX="273.0" layoutY="36.0" prefHeight="72.0" prefWidth="110.0" text="Lawyer" textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>
             <Font name="System Bold" size="31.0" />
          </font>
@@ -44,16 +44,6 @@
          </font>
       </Button>
       <Button layoutX="348.0" layoutY="314.0" mnemonicParsing="false" onAction="#fileacomplaintbtn" prefHeight="38.0" prefWidth="301.0" text="File a Complain">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Button>
-      <Button layoutX="348.0" layoutY="364.0" mnemonicParsing="false" onAction="#getlandownerinfobtn" prefHeight="72.0" prefWidth="301.0" text="Get landowner information" textAlignment="CENTER" wrapText="true">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Button>
-      <Button layoutX="15.0" layoutY="364.0" mnemonicParsing="false" onAction="#getlandbuyernfobtn" prefHeight="72.0" prefWidth="301.0" text="Get landbuyer information" textAlignment="CENTER" wrapText="true">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
