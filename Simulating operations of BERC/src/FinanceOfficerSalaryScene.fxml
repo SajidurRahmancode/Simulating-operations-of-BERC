@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth"598.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinanceOfficerSalarySceneController">
+   <children>
+      <Label layoutX="191.0" layoutY="-11.0" prefHeight="72.0" prefWidth="283.0" text=" Employee Salary" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="32.0" prefWidth="74.0" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="salaryTextField" layoutX="290.0" layoutY="258.0" prefHeight="32.0" prefWidth="272.0" />
+      <TextField fx:id="bonusTextField" layoutX="290.0" layoutY="320.0" prefHeight="32.0" prefWidth="272.0" />
+      <Label layoutX="46.0" layoutY="247.0" prefHeight="54.0" prefWidth="131.0" text="Salary " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="313.0" prefHeight="46.0" prefWidth="131.0" text="Bonus " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="43.0" layoutY="447.0" mnemonicParsing="false" onAction="#approvedButtonOnAction" prefHeight="39.0" prefWidth="524.0" text="Approved Salary">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="selectIDComboBox" layoutX="39.0" layoutY="161.0" prefHeight="25.0" prefWidth="196.0" />
+      <DatePicker fx:id="datePicker" layoutX="366.0" layoutY="161.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label layoutX="385.0" layoutY="107.0" prefHeight="54.0" prefWidth="283.0" text="Select Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="111.0" prefHeight="46.0" prefWidth="261.0" text="Select ID " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

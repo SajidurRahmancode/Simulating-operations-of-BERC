@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="782.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="DistrictmanagerjoinmeetingController">
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="782.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DistrictmanagerjoinmeetingController">
    <children>
       <Label layoutX="285.0" layoutY="35.0" prefHeight="30.0" prefWidth="136.0" text="Join Meeting" textAlignment="CENTER">
          <font>
@@ -35,7 +34,7 @@
       <TextField fx:id="meetingTimeTextField" layoutX="144.0" layoutY="328.0" prefHeight="31.0" prefWidth="526.0" />
       <TextField fx:id="meetingLocationTextField" layoutX="160.0" layoutY="381.0" prefHeight="31.0" prefWidth="526.0" />
       <TextField fx:id="setByTextField1" layoutX="166.0" layoutY="431.0" prefHeight="31.0" prefWidth="518.0" />
-      <TextField layoutX="166.0" layoutY="478.0" prefHeight="31.0" prefWidth="518.0" />
+      <TextField fx:id="meetingLinkTextField" layoutX="166.0" layoutY="478.0" prefHeight="31.0" prefWidth="518.0" />
       <Button layoutX="27.0" layoutY="20.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
    </children>
 </AnchorPane>

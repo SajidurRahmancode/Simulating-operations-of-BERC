@@ -3,27 +3,38 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="1029.0" style="-fx-background-color: purple;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Tarriff_officer_calculate_tarriffController">
+<AnchorPane id="AnchorPane" prefHeight="728.0" prefWidth="1180.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tarriff_officer_calculate_tarriffController">
    <children>
-      <TextField fx:id="amountinvested" layoutX="318.0" layoutY="110.0" promptText="amount invested" />
-      <TextField fx:id="profit" layoutX="538.0" layoutY="110.0" promptText="total profit" />
+      <TextField fx:id="amountinvested" layoutX="400.0" layoutY="110.0" promptText="amount invested" />
+      <TextField fx:id="profit" layoutX="697.0" layoutY="110.0" prefHeight="29.0" prefWidth="189.0" promptText="total profit" />
       <TextField fx:id="tarriff_percentage" layoutX="106.0" layoutY="192.0" promptText="tarriff percentage" />
-      <DatePicker fx:id="endpicker" layoutX="538.0" layoutY="192.0" promptText="end year" />
+      <DatePicker fx:id="endpicker" layoutX="697.0" layoutY="192.0" promptText="end year" />
       <ComboBox fx:id="deptcombo" layoutX="105.0" layoutY="110.0" prefWidth="150.0" />
-      <TextArea fx:id="detailedarea" layoutX="99.0" layoutY="390.0" prefHeight="200.0" prefWidth="810.0" />
-      <Button layoutX="779.0" layoutY="110.0" mnemonicParsing="false" onAction="#savebtn" prefHeight="55.0" prefWidth="76.0" text="save" />
+      <Button layoutX="1024.0" layoutY="112.0" mnemonicParsing="false" onAction="#savebtn" prefHeight="55.0" prefWidth="76.0" text="save" />
       <Text fill="#dddddd" layoutX="344.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculate tarriff" textAlignment="CENTER" wrappingWidth="387.04541015625">
          <font>
             <Font name="System Bold" size="46.0" />
          </font>
       </Text>
-      <DatePicker fx:id="startpicker" layoutX="305.0" layoutY="192.0" promptText="start picker" />
+      <DatePicker fx:id="startpicker" layoutX="400.0" layoutY="192.0" promptText="start year" />
+      <Button layoutX="1024.0" layoutY="192.0" mnemonicParsing="false" onAction="#loader" prefHeight="29.0" prefWidth="76.0" text="loader" />
+      <TableView fx:id="Tableview" layoutX="29.0" layoutY="378.0" prefHeight="316.0" prefWidth="1113.0">
+        <columns>
+          <TableColumn fx:id="deptc" prefWidth="125.0" text="DEPARTMENT" />
+          <TableColumn fx:id="investedc" prefWidth="156.0" text="AMOUNT INVESTED" />
+            <TableColumn fx:id="profitc" prefWidth="187.0" text="Total profit" />
+            <TableColumn fx:id="percentagec" prefWidth="190.0" text="Tarriff Percentage" />
+            <TableColumn fx:id="startc" prefWidth="153.0" text="Start Year" />
+            <TableColumn fx:id="endc" prefWidth="156.0" text="End year" />
+            <TableColumn fx:id="tarriffc" prefWidth="156.0" text="Tarriff" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

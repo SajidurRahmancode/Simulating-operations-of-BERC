@@ -35,7 +35,7 @@ public class HomeSceneController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) 
     {
-        userTypeComboBox.getItems().addAll("chairman", "Employee", "Lawyer", "Tariff officer","consumer" ,"Finance officer","District Manager","Government Authorities");
+        userTypeComboBox.getItems().addAll("chairman", "Employee", "Lawyer", "Tariff officer","Consumer" ,"Finance officer","District Manager","Government Authorities");
 
         userTypeComboBox.setValue("chairman");
     }

@@ -87,7 +87,7 @@ public class Lawyersetemergencymeetingcontroller implements Initializable {
         if(addstatus){
 
             Alert a=new Alert(Alert.AlertType.INFORMATION);
-            a.setContentText("New Member Added Sucussfully");
+            a.setContentText("New meeting Added Sucussfully");
             a.showAndWait();
         }
         else{
@@ -118,7 +118,7 @@ public class Lawyersetemergencymeetingcontroller implements Initializable {
             if(addstatus){
 
             Alert a=new Alert(Alert.AlertType.INFORMATION);
-            a.setContentText("New Member Added Sucussfully");
+            a.setContentText("New meeting Added Sucussfully");
             a.showAndWait();
         }
         else{

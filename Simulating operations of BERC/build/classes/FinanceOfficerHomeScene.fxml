@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="654.0" prefWidth="788.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinanceOfficerHomeSceneController">
+   <children>
+      <Button layoutX="351.0" layoutY="578.0" mnemonicParsing="false" onAction="#signoutButton" prefHeight="48.0" prefWidth="121.0" text="Sign Out">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="67.0" layoutY="148.0" mnemonicParsing="false" onAction="#budgetButton" prefHeight="48.0" prefWidth="247.0" text="Budget Desk">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="483.0" layoutY="148.0" mnemonicParsing="false" onAction="#salaryButton" prefHeight="48.0" prefWidth="247.0" text="Salary Desk">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="67.0" layoutY="254.0" mnemonicParsing="false" onAction="#showbudgetButton" prefHeight="48.0" prefWidth="247.0" text="Show Budget">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="483.0" layoutY="254.0" mnemonicParsing="false" onAction="#showsalaryButton" prefHeight="48.0" prefWidth="247.0" text="Show Salary ">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Text fill="#f2ecec" layoutX="146.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finance Officer Dashboard">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Text>
+      <Button layoutX="67.0" layoutY="366.0" mnemonicParsing="false" onAction="#budgetPieButton" prefHeight="48.0" prefWidth="247.0" text=" Budget PieChart">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="483.0" layoutY="475.0" mnemonicParsing="false" onAction="#giveinfoButton" prefHeight="48.0" prefWidth="247.0" text="Give Information">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="483.0" layoutY="366.0" mnemonicParsing="false" onAction="#salaryPieButton" prefHeight="48.0" prefWidth="247.0" text=" Salary PieChart">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="67.0" layoutY="475.0" mnemonicParsing="false" onAction="#setmeetButton" prefHeight="48.0" prefWidth="247.0" text="Set Meeting">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="724.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="DistrictManagerFileaCaseController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="724.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DistrictManagerFileaCaseController">
    <children>
       <Label layoutX="275.0" layoutY="44.0" prefHeight="30.0" prefWidth="117.0" text="File A Case">
          <font>

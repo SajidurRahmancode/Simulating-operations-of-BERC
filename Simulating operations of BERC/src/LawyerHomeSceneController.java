@@ -24,7 +24,6 @@ import javafx.stage.Stage;
  *
  * @author sajid
  */
-import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -78,18 +77,11 @@ public class LawyerHomeSceneController implements Initializable {
         window.show();
     }
 
-    private void setVotingBtnOnAction(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("LawyerSetVoting.fxml"));
-        Scene scene2 = new Scene(scene2Parent);
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setScene(scene2);
-        window.show();
-    }
+    
 
     @FXML
     private void fileACaseBtnOnAction(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("LawyerFileACase.fxml"));
+        Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyerFileACase.fxml"));
         Scene scene2 = new Scene(scene2Parent);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
@@ -99,7 +91,7 @@ public class LawyerHomeSceneController implements Initializable {
 
     @FXML
     private void complainFiledBtnOnAction(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("LawyerCaseField.fxml"));
+        Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyerCaseField.fxml"));
         Scene scene2 = new Scene(scene2Parent);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
@@ -107,14 +99,7 @@ public class LawyerHomeSceneController implements Initializable {
         window.show();
     }
 
-    private void caseProgressBtnOnAction(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("LawyerComplainProgress.fxml"));
-        Scene scene2 = new Scene(scene2Parent);
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setScene(scene2);
-        window.show();
-    }
+  
 
     
     private String getMeetingData() throws FileNotFoundException, IOException {
@@ -131,7 +116,7 @@ public class LawyerHomeSceneController implements Initializable {
 
     @FXML
     private void Leaverequestbtn(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("Lawyerleaverequestscene.fxml"));
+        Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyerleaverequestscene.fxml"));
         Scene scene2 = new Scene(scene2Parent);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(scene2);
@@ -141,7 +126,7 @@ public class LawyerHomeSceneController implements Initializable {
 
     @FXML
     private void fileacomplaintbtn(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("Lawyer file a complain.fxml"));
+        Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyer file a complain.fxml"));
         Scene scene2 = new Scene(scene2Parent);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(scene2);
@@ -152,28 +137,12 @@ public class LawyerHomeSceneController implements Initializable {
 
    
 
-    @FXML
-    private void getlandbuyernfobtn(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("LawyergetLandBuyerinformationverify.fxml"));
-        Scene scene2 = new Scene(scene2Parent);
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        window.setScene(scene2);
-        window.show();
-    }
-
-    @FXML
-    private void getlandownerinfobtn(ActionEvent event) throws IOException {
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("Lawyergetlandownerinformation.fxml"));
-        Scene scene2 = new Scene(scene2Parent);
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        window.setScene(scene2);
-        window.show();
-    }
+    
 
     @FXML
     private void joinmeetingbtn(ActionEvent event) throws IOException {
 
-        Parent scene2Parent = FXMLLoader.load(getClass().getResource("Lawyerjoinmeeting.fxml"));
+        Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyerjoinmeeting.fxml"));
         Scene scene2 = new Scene(scene2Parent);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(scene2);
