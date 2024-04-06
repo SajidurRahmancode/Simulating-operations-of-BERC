@@ -10,12 +10,24 @@ import java.time.LocalDate;
  *
  * @author Reaper
  */
+<<<<<<< Updated upstream:Simulating operations of BERC/src/modelclass/Tarriff_officer.java
 public class Tarriff_officer {
     
         Float  amountinvested,profit,tarriff_percentage;
          LocalDate         startpicker;
        LocalDate      endpicker;
            String     deptcombo;
+=======
+public class Tarriff extends User implements Serializable {
+       private String     deptcombo;
+       private int  amountinvested,profit;
+       private float tarriff_percentage;
+        
+        private LocalDate         startpicker;
+        private    LocalDate      endpicker;
+           
+       private float tarriff;
+>>>>>>> Stashed changes:Simulating operations of BERC/src/modelclass/Tarriff.java
 
     public Tarriff_officer(Float amountinvested, Float profit, Float tarriff_percentage, LocalDate startpicker, LocalDate endpicker, String deptcombo) {
         this.amountinvested = amountinvested;

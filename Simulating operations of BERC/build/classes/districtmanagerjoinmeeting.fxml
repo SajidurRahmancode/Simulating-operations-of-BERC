@@ -35,7 +35,11 @@
       <TextField fx:id="meetingTimeTextField" layoutX="144.0" layoutY="328.0" prefHeight="31.0" prefWidth="526.0" />
       <TextField fx:id="meetingLocationTextField" layoutX="160.0" layoutY="381.0" prefHeight="31.0" prefWidth="526.0" />
       <TextField fx:id="setByTextField1" layoutX="166.0" layoutY="431.0" prefHeight="31.0" prefWidth="518.0" />
+<<<<<<< Updated upstream
       <TextField layoutX="166.0" layoutY="478.0" prefHeight="31.0" prefWidth="518.0" />
+=======
+      <TextField fx:id="meetingLinkTextField" layoutX="166.0" layoutY="478.0" prefHeight="31.0" prefWidth="518.0" />
+>>>>>>> Stashed changes
       <Button layoutX="27.0" layoutY="20.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
    </children>
 </AnchorPane>

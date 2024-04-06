@@ -23,5 +23,16 @@
       <TextField alignment="TOP_CENTER" layoutX="422.0" layoutY="241.0" prefHeight="31.0" prefWidth="271.0" text="Get landbuyer Information" />
       <TextField alignment="TOP_CENTER" layoutX="422.0" layoutY="294.0" prefHeight="31.0" prefWidth="271.0" text="Case List" />
       <Button layoutX="332.0" layoutY="391.0" mnemonicParsing="false" text="Sign Out" />
+<<<<<<< Updated upstream
+=======
+      <Button layoutX="60.0" layoutY="124.0" mnemonicParsing="false" onAction="#setEmergencyMeetingBtnOnAction" prefHeight="31.0" prefWidth="235.0" text="Set Meeting" />
+      <Button layoutX="66.0" layoutY="177.0" mnemonicParsing="false" onAction="#fileACaseBtnOnAction" prefHeight="31.0" prefWidth="226.0" text="File a Case" />
+      <Button layoutX="63.0" layoutY="234.0" mnemonicParsing="false" onAction="#Leaverequestbtn" prefHeight="31.0" prefWidth="226.0" text="Leave Request" />
+      <Button layoutX="62.0" layoutY="294.0" mnemonicParsing="false" onAction="#getlandownerinfobtn" prefHeight="31.0" prefWidth="226.0" text="Get Landowner Information" />
+      <Button layoutX="423.0" layoutY="124.0" mnemonicParsing="false" onAction="#joinauthoritiesmeetingbtn" prefHeight="31.0" prefWidth="250.0" text="Join Meeting " />
+      <Button layoutX="424.0" layoutY="186.0" mnemonicParsing="false" onAction="#fileacomplaintbtn" prefHeight="31.0" prefWidth="250.0" text="File A Complain" />
+      <Button layoutX="429.0" layoutY="241.0" mnemonicParsing="false" onAction="#getlandbuyernfobtn" prefHeight="31.0" prefWidth="235.0" text="Get Landbuyer Information" />
+      <Button layoutX="429.0" layoutY="310.0" mnemonicParsing="false" onAction="#complainFiledBtnOnAction" prefHeight="31.0" prefWidth="235.0" text="Case List" />
+>>>>>>> Stashed changes
    </children>
 </AnchorPane>
