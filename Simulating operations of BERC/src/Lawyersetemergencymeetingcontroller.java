@@ -49,7 +49,7 @@ public class Lawyersetemergencymeetingcontroller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
             meetingTypeComboBox.getItems().addAll("Offline Meeting", "Online Meeting");
-            setByComboBox2.getItems().addAll("chairman", "Employee", "Lawyer", "Tariff officer","consumer" ,"Finance officer","District Manager","Government Authorities");
+            setByComboBox2.getItems().addAll("chairman", "Employee",  "Tariff officer","consumer" ,"Finance officer","District Manager","Government Authorities");
 
         
         // TODO

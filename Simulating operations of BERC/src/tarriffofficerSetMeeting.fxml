@@ -64,7 +64,7 @@
       </Label>
       <TextField fx:id="meetingLinkTextField" layoutX="275.0" layoutY="348.0" prefHeight="26.0" prefWidth="374.0" />
       <ComboBox fx:id="meetingTypeComboBox" layoutX="275.0" layoutY="162.0" prefHeight="26.0" prefWidth="374.0" />
-      <Label layoutX="40.0" layoutY="396.0" text="Set By" textFill="WHITE">
+      <Label layoutX="40.0" layoutY="396.0" text="with" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

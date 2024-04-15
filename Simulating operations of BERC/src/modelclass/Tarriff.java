@@ -4,7 +4,11 @@
  */
 package modelclass;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.LocalDate;
+import javafx.scene.chart.PieChart;
 
 /**
  *
@@ -91,6 +95,10 @@ public class Tarriff {
     }
 
     
-           
+    public static float calctarriff(float tarriff_percentage, int amountinvested, int profit) {
+        float tariffAmount = (tarriff_percentage / 100) * profit;
+        return tariffAmount;
 
+
+     }
 }

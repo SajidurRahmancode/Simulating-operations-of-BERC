@@ -49,7 +49,7 @@ public class Tarriffofficersetmeetingcontroller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
             meetingTypeComboBox.getItems().addAll("Offline Meeting", "Online Meeting");
-            setByComboBox2.getItems().addAll("chairman", "Employee", "Lawyer", "Tariff officer","consumer" ,"Finance officer","District Manager","Government Authorities");
+            setByComboBox2.getItems().addAll("chairman", "Employee", "Lawyer", "consumer" ,"Finance officer","District Manager","Government Authorities");
 
         
         // TODO
@@ -57,7 +57,7 @@ public class Tarriffofficersetmeetingcontroller implements Initializable {
 
     @FXML
     private void backButtonOnAction(ActionEvent event) throws IOException {
-         Parent scene2Parent = FXMLLoader.load(getClass().getResource("lawyerHomeScene.fxml"));
+         Parent scene2Parent = FXMLLoader.load(getClass().getResource("tarriffofficerhomescene.fxml"));
          Scene scene2 = new Scene(scene2Parent);
          Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         

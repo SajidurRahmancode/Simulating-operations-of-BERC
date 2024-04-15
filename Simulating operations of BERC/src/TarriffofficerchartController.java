@@ -7,8 +7,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
+
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -34,42 +33,28 @@ public class TarriffofficerchartController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-    try {
-            Map<String, Double> departmentTariffMap = readTariffData();
+            try {
+                 BufferedReader reader = new BufferedReader(new FileReader(tariffDataFile));
+                 String line;
 
-            PieChart.Data[] pieChartData = new PieChart.Data[departmentTariffMap.size()];
-            int i = 0;
-            for (Map.Entry<String, Double> entry : departmentTariffMap.entrySet()) {
-                pieChartData[i] = new PieChart.Data(entry.getKey(), entry.getValue());
-                i++;
-            }
-
-            tarriffpiechart.getData().addAll(pieChartData);
-        } catch (IOException e) {
-            System.err.println("Error reading tariff data: " + e.getMessage());
-        }
+                 while ((line = reader.readLine()) != null) {
+                     String[] data = line.split(",");
+                     if (data.length >= 7) {
+                         String department = data[0];
+                         double tariffAmount = Double.parseDouble(data[data.length - 1]);
+                         PieChart.Data pieData = new PieChart.Data(department, tariffAmount);
+                         tarriffpiechart.getData().add(pieData);
+                     } else {
+                         System.err.println("Warning: Invalid data format in tariff.txt (line: " + line + ")");
+                     }
+                 }
+                 reader.close();
+             } catch (IOException e) {
+                 System.err.println("Error reading tariff data: " + e.getMessage());
+             }
     }
 
-    private Map<String, Double> readTariffData() throws IOException {
-        Map<String, Double> departmentTariffMap = new HashMap<>();
-        BufferedReader reader = new BufferedReader(new FileReader(tariffDataFile));
-        String line;
-
-        while ((line = reader.readLine()) != null) {
-            String[] data = line.split(",");
-            if (data.length >= 7) {
-                String department = data[0];
-                double tariffAmount = Double.parseDouble(data[data.length - 1]);
-                departmentTariffMap.put(department, tariffAmount);
-            } else {
-                System.err.println("Warning: Invalid data format in tariff.txt (line: " + line + ")");
-            }
-        }
-
-        reader.close();
-        return departmentTariffMap;
-    }
-
+    
     @FXML
     private void backbtn(ActionEvent event) throws IOException {
         
