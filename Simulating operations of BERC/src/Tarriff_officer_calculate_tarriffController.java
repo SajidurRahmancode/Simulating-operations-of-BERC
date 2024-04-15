@@ -133,7 +133,7 @@ public class Tarriff_officer_calculate_tarriffController implements Initializabl
                     Float.parseFloat(tarriff_percentage.getText()),
                     startpicker.getValue().toString(),
                     endpicker.getValue().toString(),                    
-                    calctarriff(Float.parseFloat(tarriff_percentage.getText()), Integer.parseInt(amountinvested.getText()), Integer.parseInt(profit.getText())));
+                    Tarriff.calctarriff(Float.parseFloat(tarriff_percentage.getText()), Integer.parseInt(amountinvested.getText()), Integer.parseInt(profit.getText())));
 
             bw.write(data);
 
@@ -214,12 +214,7 @@ public class Tarriff_officer_calculate_tarriffController implements Initializabl
        alert.showAndWait();
     }    
 
-    public static float calctarriff(float tarriff_percentage, int amountinvested, int profit) {
-                    float tariffAmount = (tarriff_percentage / 100) * profit;
-                    return tariffAmount;
-
-
-     }
+    
 
     @FXML
     private void backbtn(ActionEvent event) throws IOException {

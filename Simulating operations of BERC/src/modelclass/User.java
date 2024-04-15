@@ -37,10 +37,10 @@ public abstract class User {
         Parent userSceneParent;
         switch (type) {
             case "chairman":
-                userSceneParent = FXMLLoader.load(getClass().getResource("landOwnerHomeScene.fxml"));
+                userSceneParent = FXMLLoader.load(getClass().getResource("chairmanHomeScene.fxml"));
                 break;
             case "Employee":
-                userSceneParent = FXMLLoader.load(getClass().getResource("employeeHomeScene.fxml"));
+                userSceneParent = FXMLLoader.load(getClass().getResource("employee home scene.fxml"));
                 break;
             case "Lawyer":
                 userSceneParent = FXMLLoader.load(getClass().getResource("lawyerHomeScene.fxml"));
