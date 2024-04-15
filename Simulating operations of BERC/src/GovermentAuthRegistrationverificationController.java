@@ -13,44 +13,48 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
 /**
  * FXML Controller class
  *
  * @author DELL
  */
-public class DistrictManagerFileaCaseController implements Initializable {
+public class GovermentAuthRegistrationverificationController implements Initializable {
 
     @FXML
-    private TextArea caseTextArea;
+    private TextField AreaTextField;
     @FXML
-    private TextField nametextfield;
+    private TextField LocationTextField;
+    @FXML
+    private TextArea outputTextArea;
+    @FXML
+    private TextField BuyerTextField;
+    @FXML
+    private TextField OwnerTextField;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        //
+        // TODO
     }    
 
     @FXML
-    private void sendCaseButtonOnAction(ActionEvent event) {
+    private void backButtonOnAction(ActionEvent event) throws IOException {
+        Parent scene2Parent = FXMLLoader.load(getClass().getResource("governmentAuthHomeScene.fxml"));
+        Scene scene2 = new Scene(scene2Parent);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(scene2);
+        window.show();
     }
 
     @FXML
-    private void backButtonOnAction(ActionEvent event) throws IOException 
-    {
-         Parent scene2Parent = FXMLLoader.load(getClass().getResource("District Manager home scene.fxml"));
-         Scene scene2 = new Scene(scene2Parent);
-         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        
-         window.setScene(scene2);
-         window.show();
+    private void searchButtonOnAction(ActionEvent event) {
     }
-
-   
+    
 }
