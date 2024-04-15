@@ -4,24 +4,22 @@
  */
 package modelclass;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
  *
  * @author Reaper
  */
-public class Tarriff extends User implements Serializable {
-        String     deptcombo;
-        int  amountinvested,profit;
-        float tarriff_percentage;
-        
-         LocalDate         startpicker;
-            LocalDate      endpicker;
-           
-        float tarriff;
+public class Tarriff {
+    String     deptcombo;
+        Float  amountinvested,profit;
+                           Float tarriff_percentage;
 
-    public Tarriff(String deptcombo, int amountinvested, int profit, float tarriff_percentage, LocalDate startpicker, LocalDate endpicker, float tarriff) {
+         LocalDate         startpicker;
+       LocalDate      endpicker;
+       Float tarriff;
+
+    public Tarriff(String deptcombo, Float amountinvested, Float profit, Float tarriff_percentage, LocalDate startpicker, LocalDate endpicker, Float tarriff) {
         this.deptcombo = deptcombo;
         this.amountinvested = amountinvested;
         this.profit = profit;
@@ -39,27 +37,27 @@ public class Tarriff extends User implements Serializable {
         this.deptcombo = deptcombo;
     }
 
-    public int getAmountinvested() {
+    public Float getAmountinvested() {
         return amountinvested;
     }
 
-    public void setAmountinvested(int amountinvested) {
+    public void setAmountinvested(Float amountinvested) {
         this.amountinvested = amountinvested;
     }
 
-    public int getProfit() {
+    public Float getProfit() {
         return profit;
     }
 
-    public void setProfit(int profit) {
+    public void setProfit(Float profit) {
         this.profit = profit;
     }
 
-    public float getTarriff_percentage() {
+    public Float getTarriff_percentage() {
         return tarriff_percentage;
     }
 
-    public void setTarriff_percentage(float tarriff_percentage) {
+    public void setTarriff_percentage(Float tarriff_percentage) {
         this.tarriff_percentage = tarriff_percentage;
     }
 
@@ -79,11 +77,11 @@ public class Tarriff extends User implements Serializable {
         this.endpicker = endpicker;
     }
 
-    public float getTarriff() {
+    public Float getTarriff() {
         return tarriff;
     }
 
-    public void setTarriff(float tarriff) {
+    public void setTarriff(Float tarriff) {
         this.tarriff = tarriff;
     }
 
@@ -93,6 +91,6 @@ public class Tarriff extends User implements Serializable {
     }
 
     
-        
-    
+           
+
 }
