@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="874.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DistrictmanagerCaseListController">
+   <children>
+      <Label layoutX="350.0" layoutY="32.0" prefHeight="21.0" prefWidth="177.0" text="Case List">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="33.0" layoutY="33.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="31.0" prefWidth="85.0" text="Back" />
+      <TableView fx:id="casefieldtable" layoutX="48.0" layoutY="130.0" prefHeight="319.0" prefWidth="789.0">
+        <columns>
+          <TableColumn fx:id="casesummarycolumn" prefWidth="344.0" text="Case Summary" />
+          <TableColumn fx:id="casenamecolumn" prefWidth="210.0" text="Against" />
+            <TableColumn fx:id="submittedbycolumn" prefWidth="234.0" text="Submitted By" />
+        </columns>
+      </TableView>
+      <Button layoutX="592.0" layoutY="475.0" mnemonicParsing="false" onAction="#removecasebtn" prefHeight="31.0" prefWidth="106.0" text="Remove" />
+   </children>
+</AnchorPane>
